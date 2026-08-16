@@ -1,0 +1,52 @@
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..257e37f0d9e5f6ff77ea5d52b43f1979d78e4ccb
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,46 @@
++<!doctype html>
++<html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Hyperbeam Web Embed</title>
++    <link rel="stylesheet" href="styles.css" />
++  </head>
++  <body>
++    <main class="app-shell">
++      <section class="hero" aria-labelledby="page-title">
++        <p class="eyebrow">Hyperbeam embed</p>
++        <h1 id="page-title">Embed a Hyperbeam virtual computer on your website</h1>
++        <p class="intro">
++          Put your Hyperbeam API key in the server-only <code>.env</code> file. The browser calls this demo backend,
++          receives only the session embed URL, and then loads that URL into the page.
++        </p>
++      </section>
++
++      <section class="controls" aria-label="Hyperbeam session controls">
++        <label for="embed-url">Hyperbeam embed URL</label>
++        <div class="control-row">
++          <input
++            id="embed-url"
++            name="embed-url"
++            type="url"
++            inputmode="url"
++            placeholder="https://abc.hyperbeam.com/..."
++            autocomplete="off"
++          />
++          <button id="create-button" type="button">Create session</button>
++          <button id="load-button" type="button">Load embed</button>
++        </div>
++        <p id="status" class="status" role="status">Waiting for an embed URL.</p>
++      </section>
++
++      <section class="embed-card" aria-label="Embedded Hyperbeam browser">
++        <div id="hyperbeam-container" class="embed-placeholder">
++          <p>Paste a Hyperbeam embed URL above to start.</p>
++        </div>
++      </section>
++    </main>
++
++    <script type="module" src="app.js"></script>
++  </body>
++</html>
