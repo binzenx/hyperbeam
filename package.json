@@ -1,16 +1,10 @@
-diff --git a/package.json b/package.json
-new file mode 100644
-index 0000000000000000000000000000000000000000..64d27ef13464220265d673e65d7b51b373a13748
---- /dev/null
-+++ b/package.json
-@@ -0,0 +1,10 @@
-+{
-+  "name": "hyperbeam-web-embed",
-+  "version": "1.0.0",
-+  "private": true,
-+  "description": "A small static web page that embeds a Hyperbeam virtual computer.",
-+  "scripts": {
-+    "start": "node server.mjs",
-+    "check": "node --check app.js && node --check server.mjs"
-+  }
-+}
+{
+  "name": "hyperbeam-web-embed",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small static web page that embeds a Hyperbeam virtual computer.",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check app.js && node --check server.mjs"
+  }
+}
