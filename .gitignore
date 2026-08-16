@@ -1,9 +1,3 @@
-diff --git a/.gitignore b/.gitignore
-new file mode 100644
-index 0000000000000000000000000000000000000000..fcc540043d10e22a6545d65f36b23c4f8b0406d1
---- /dev/null
-+++ b/.gitignore
-@@ -0,0 +1,3 @@
-+.env
-+node_modules/
-+.DS_Store
+env
+node_modules/
+.DS_Store
